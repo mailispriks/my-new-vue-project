@@ -6,12 +6,13 @@ const bodyParser = require("body-parser");
 const db = require("./dbConnection");
 const expressJwt = require("express-jwt");
 const { SECRET } = require("./config");
-
+/*
 app.use(
   expressJwt({ secret: SECRET, algorithms: ["HS256"] }).unless({
     path: ["/api/auth/register", "/api/auth/login"],
   })
 );
+*/
 
 app.use(bodyParser.json());
 

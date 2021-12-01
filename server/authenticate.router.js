@@ -13,7 +13,7 @@ router.post("/register", async function (request, response) {
     await Users.create(request.body);
     response.send({ status: "All Good" });
   } catch (error) {
-    console.error("register endpoint failed");
+    console.error(error);
     response.status(500).send({ status: "Not good" });
   }
 });
